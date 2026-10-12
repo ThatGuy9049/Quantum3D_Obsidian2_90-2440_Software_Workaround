@@ -1,5 +1,5 @@
 # AI vibe slop up ahead
-I, am no engineer, unfortunately this means that this project was mostly AI assisted, I just provided the guidance, along with the trial and error.
+I, am no engineer, unfortunately this means that this project was mostly AI assisted (via Anthropic's Claude), I just provided the guidance, along with the trial and error.
 but this should be pretty valid, at least. To me.
 
 # Obsidian2 90-2440 unlock (Windows XP)
