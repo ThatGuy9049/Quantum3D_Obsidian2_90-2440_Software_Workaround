@@ -16,6 +16,7 @@ Hydro Thunder arcade software performs at start-up. This tool replays that hands
 
 Works on the tested setup below: after the handshake the card renders (Glide demos, Half-Life 1 showed video).
 Without it, the card shows nothing. **Tested on one machine only.**
+The machine that this was tested on was a real Quantum3D Quicksilver II with some upgrades, if you have a system alike this should more than likely work out.
 
 | | |
 |---|---|
