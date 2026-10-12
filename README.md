@@ -3,6 +3,7 @@ I, am no engineer, unfortunately this means that this project was mostly AI assi
 but this should be pretty valid, at least. To me.
 
 # Obsidian2 90-2440 unlock (Windows XP)
+<img width="868" height="449" alt="thumbnail" src="https://github.com/user-attachments/assets/a550c18e-80f6-48fe-b518-1a8b3dc5a140" />
 
 Unlocks the security-locked **Quantum3D Obsidian2 90-2440** (a Voodoo2-class OEM arcade board with the
 546-0024-03 CPLD) from a normal Windows XP PC, so Glide / 3D programs can use it.
@@ -103,9 +104,11 @@ video card; this tool instead unlocks this specific card for general Glide / 3D 
   - had the Hydro Thunder script files used heavily early on to check the card's behaviour.
 - [PeDiniz Voodoo2 driver, v2xp (athlon)](https://3dfxarchive.com/downloads/PeDiniz-v2xp-(athlon).zip) - the driver used on the test PC.
 - [RWEverything](https://rweverything.com/) - register access. requirement
+- [TDFX](http://www.tdfx.de/eng/obsidian2_90-2440.shtml) - reference photo for thumbnail.
 
 Honorable mention: [jeffqchen/quantum3d_obsidian2_voodoo2_info](https://github.com/jeffqchen/quantum3d_obsidian2_voodoo2_info) -
 in-depth information and mods for the Quantum3D Obsidian2 Voodoo 2 card, for hardware-level mods.
+
 
 ## License
 
