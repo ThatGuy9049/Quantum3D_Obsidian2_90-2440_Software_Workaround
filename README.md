@@ -1,3 +1,7 @@
+# AI vibe slop up ahead
+I, am no engineer, unfortunately this means that this project was mostly AI assisted, I just provided the guidance, along with the trial and error.
+but this should be pretty valid, at least. To me.
+
 # Obsidian2 90-2440 unlock (Windows XP)
 
 Unlocks the security-locked **Quantum3D Obsidian2 90-2440** (a Voodoo2-class OEM arcade board with the
