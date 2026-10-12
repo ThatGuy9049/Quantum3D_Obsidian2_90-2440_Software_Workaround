@@ -48,8 +48,8 @@ card is not responding.
 
 ## Known problems and cautions
 
-- **No video pass-through.** The 90-2440 has none, so the monitor has to be moved between the display card
-  and the 3D card. Swapping the cable while Windows was running crashed the test PC twice. Safer: a second
+- **No video pass-through.** The 90-2440 has none [(unless modded)](https://github.com/jeffqchen/quantum3d_obsidian2_voodoo2_info), so the monitor has to be moved between the display card
+  and the 3D card. Swapping the cable while Windows was running crashed the test PC twice. (probably just a thing with my particular setup, this is claude's documentation being cautious) Safer: a second
   monitor, an A/B VGA switch, or shutting down before moving the cable. The tool does not need video while
   it runs, so you can run it with the display-card monitor attached and move the cable afterwards.
 - **"Mapmem driver initialization failure" (3dfx fxPCI library).** Seen on some launches of Glide programs
@@ -102,7 +102,7 @@ video card; this tool instead unlocks this specific card for general Glide / 3D 
 - [Arcade-Museum forum thread "Confirmed working Hydro Thunder video card security bypass"](https://forums.arcade-museum.com/threads/confirmed-working-hydro-thunder-video-card-security-bypass.357654/page-13#post-3216337)
   - had the Hydro Thunder script files used heavily early on to check the card's behaviour.
 - [PeDiniz Voodoo2 driver, v2xp (athlon)](https://3dfxarchive.com/downloads/PeDiniz-v2xp-(athlon).zip) - the driver used on the test PC.
-- RWEverything (rweverything.com) - register access.
+- [RWEverything](https://rweverything.com/) - register access. requirement
 
 Honorable mention: [jeffqchen/quantum3d_obsidian2_voodoo2_info](https://github.com/jeffqchen/quantum3d_obsidian2_voodoo2_info) -
 in-depth information and mods for the Quantum3D Obsidian2 Voodoo 2 card, for hardware-level mods.
