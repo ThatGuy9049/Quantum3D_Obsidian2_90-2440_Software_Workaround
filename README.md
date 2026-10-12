@@ -24,7 +24,7 @@ Without it, the card shows nothing. **Tested on one machine only.**
 | Display card | GeForce MX440 (AGP); the 90-2440 is in a PCI slot |
 | OS | Windows XP |
 | Driver for the 3D card | [PeDiniz Voodoo2 driver, v2xp (athlon)](https://3dfxarchive.com/downloads/PeDiniz-v2xp-(athlon).zip) |
-| Python | 2.7.18, 32-bit (Python 3 should also work) |
+| Python | 2.7.18, 32-bit (Python 3 is untested) |
 | RWEverything | 1.5.3.7, at `C:\Program Files\Rw-Everything\Rw.exe` |
 
 ## How to use
@@ -49,22 +49,22 @@ card is not responding.
 
 ## Known problems and cautions
 
-- **No video pass-through.** The 90-2440 has none [(unless modded)](https://github.com/jeffqchen/quantum3d_obsidian2_voodoo2_info), so the monitor has to be moved between the display card
-  and the 3D card. Swapping the cable while Windows was running crashed the test PC twice. (probably just a thing with my particular setup, this is claude's documentation being cautious) Safer: a second
-  monitor, an A/B VGA switch, or shutting down before moving the cable. The tool does not need video while
+- **No video pass-through.** The 90-2440 has no pass-through port [(unless modded)](https://github.com/jeffqchen/quantum3d_obsidian2_voodoo2_info), so the monitor has to be moved between the display card
+  and the 3D card. Swapping the cable while Windows was running crashed the test PC twice. (this could've been due to memory editing at the time, I do not know if this is confirmed but it happened twice.)
+   Safer: a second monitor, an A/B VGA switch, or shutting down before moving the cable. The tool does not need video while
   it runs, so you can run it with the display-card monitor attached and move the cable afterwards.
 - **"Mapmem driver initialization failure" (3dfx fxPCI library).** Seen on some launches of Glide programs
   after running other commands from earlier test versions of this tool. It did **not** appear on a fresh boot
   followed by a single `unlock.py` run, and video rendered even when it did appear. The cause is not
   understood. If you see it, reboot and run `unlock.py` first thing, with nothing else before it.
-- Close Glide programs before running the tool. This is a precaution, not a proven requirement.
+- Close Glide programs before running the tool.
 - **This writes to hardware registers.** The tool restores the two registers it touches when it finishes
   (also on Ctrl+C), but use it at your own risk. A hang is possible; a power-cycle resets the card.
 
 ## How it works (short)
 
 The card exposes two registers in BAR0 that the 3dfx init code uses as a bit-banged serial line
-to the CPLD (the same pins the Voodoo2 reference design uses for its TV-out/GPIO):
+to the CPLD
 
 - `BAR0+0x244` (fbiInit5): bit 4 = clock, bit 27 = enable
 - `BAR0+0x248` (fbiInit6): bits 12:11 = data line (written high or low; read back as the CPLD's answer)
@@ -103,7 +103,7 @@ video card; this tool instead unlocks this specific card for general Glide / 3D 
 - [Arcade-Museum forum thread "Confirmed working Hydro Thunder video card security bypass"](https://forums.arcade-museum.com/threads/confirmed-working-hydro-thunder-video-card-security-bypass.357654/page-13#post-3216337)
   - had the Hydro Thunder script files used heavily early on to check the card's behaviour.
 - [PeDiniz Voodoo2 driver, v2xp (athlon)](https://3dfxarchive.com/downloads/PeDiniz-v2xp-(athlon).zip) - the driver used on the test PC.
-- [RWEverything](https://rweverything.com/) - register access. requirement
+- [RWEverything](https://rweverything.com/) - register access requirement.
 - [TDFX](http://www.tdfx.de/eng/obsidian2_90-2440.shtml) - reference photo for thumbnail.
 
 Honorable mention: [jeffqchen/quantum3d_obsidian2_voodoo2_info](https://github.com/jeffqchen/quantum3d_obsidian2_voodoo2_info) -
