@@ -2,11 +2,14 @@
 I, am no engineer, unfortunately this means that this project was mostly AI assisted (via Anthropic's Claude), I just provided the guidance, along with the trial and error.
 but this should be pretty valid, at least. To me.
 
+# CPLD EXPECTED: 546-0024-03
+It is unknown if this tool will work with your Obsidian2 if this is not your CPLD,
+as far as I know people have actually gotten video from their cards without doing anything if it didnt have this CPLD.
+
 # Obsidian2 90-2440 unlock (Windows XP)
 <img width="868" height="449" alt="thumbnail" src="https://github.com/user-attachments/assets/a550c18e-80f6-48fe-b518-1a8b3dc5a140" />
 
-Unlocks the security-locked **Quantum3D Obsidian2 90-2440** (a Voodoo2-class OEM arcade board with the
-546-0024-03 CPLD) from a normal Windows XP PC, so Glide / 3D programs can use it.
+Unlocks the security-locked **Quantum3D Obsidian2 90-2440** (a Voodoo2)  from a normal Windows XP PC, so Glide / 3D programs can use it.
 
 The board's CPLD stays "locked" (no 3D output) until it gets the challenge/response handshake the
 Hydro Thunder arcade software performs at start-up. This tool replays that handshake through
